@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="img/innovation.png">
+    <script src="script.js"></script>
     <title>Il Futuro dei Robot</title>
 </head>
 <body>
@@ -16,23 +17,153 @@
         </div>
     </header>
     <main>
+        <aside>
+            <!--
+            <ul>
+                <li>Robotica e AI</li>
+                <li>Apprendimento automatico</li>
+                <li>Interpretazione artificiale</li>
+                <li>Etica dell'AI</li>
+            </ul>
+        -->
+            <div class="lista">
+                <button class="articolo" onclick="pagina(0)">
+                    1
+                </button>
+                <button class="articolo" onclick="pagina(1)">
+                    2
+                </button>
+                <button class="articolo" onclick="pagina(2)">
+                    3
+                </button>
+                <button class="articolo" onclick="pagina(3)">
+                    4
+                </button>
+            </div>
+        </aside>
         <section>
-            <iframe src="" frameborder="0"></iframe>
+            <article id="art1">
+                <h1>Robotica e AI</h1>
+                <hr>
+                <div class="text">
+                    <img src="img/Intelligenza-Artificiale.jpg">
+                    <p>
+                        La robotica nasce con l’obiettivo di automatizzare lavori o impieghi 
+                        ripetitivi svolti dagli esseri umani, il termine deriva dal ceco Robota 
+                        che significa: lavoro pesante o lavoro forzato. Le prime apparizioni di 
+                        automi primitivi furono una nel 1738 Jacques quando de Vauncason fabbricò 
+                        un androide capace di suonare un flauto, e nel 1774 l’inventore dell’orologio 
+                        da polso, Pierre Jacquet-Droz, fabbricò The Scribe, un robot antropomorfo 
+                        ispirato ad un bambino di tre anni che seppe sorprendere per il fatto di 
+                        saper seguire con lo sguardo un testo durante la sua scrittura. 
+                    </p>
+                    <p>I robot moderni si distinguono in diverse categorie:</p>
+                    <ul>
+                        <li>
+                            Robot non autonomi: ovvero tutti quei sistemi che necessitano 
+                            di un software che dia delle istruzioni precise alla macchina 
+                            che andrà a ripetere senza variarne la prcedura, ad esempio 
+                            robot industriali oppure droni.
+                        </li>
+                        <li>
+                            Robot autonomi: questi, invece, sono capaci attraverso 
+                            l’utilizzo di sensori e altri strumenti di ricevere segnali 
+                            dall’ambiente che dunque in base alle situazioni agiscono 
+                            in modo differente.
+                        </li>
+                    </ul>
+                    <p>
+                        Nei Robot autonomi in questi ultimi anni è sempre più 
+                        in sviluppo il settore della IA ovvero l’intelligenza artificiale. 
+                        Questi sistemi hanno l’obiettivo di avvicinarsi il più possibile 
+                        al comportamento umano quindi pensare e agire in modo razionale.
+                    </p>
+                    <p>
+                        I requisiti principali di un’intelligenza artificiale per raggiungere l’uomo sono:
+                    </p>
+                    <ul>
+                        <li>Pianificazione</li>
+                        <li>Apprendimento</li>
+                        <li>Elaborazione del linguaggio naturale</li>
+                        <li>Movimento e manipolazione</li>
+                    </ul>
+                </div>
+            </article>
+            <article id="art2">
+                <h1>Apprendimento automatico</h1>
+                <hr>
+                <div class="text">
+                    <img src="img/download.jpeg" alt="">
+                    <p> 
+                        In questo scenario, l'Intelligenza Artificiale deve essere trattata combinando gli aspetti teorici a quelli pratici e operativi. Partendo dal significato di AI,
+                        in questa guida possiamo descrivere le principali tecniche di Intelligenza Artificiale il funzionamento, le diverse applicazioni, le opportunità derivanti e il percorso di avvicinamento delle imprese italiane.
+                        Rispondendo a un roboante interrogativo finale: l'Artificial Intelligence è una minaccia o una necessità per l'uomo?
+                        Tuttavia, se è vero che l’Intelligenza Artificiale potrebbe essere applicata a diversi ambiti del nostro quotidiano, questo processo di diffusione non è destinato a diffondersi in tutti gli ambiti alla stessa velocità. 
+                        Il machine learning è un ramo dell'AI (artificial intelligence) e della computer science che si concentra sull'utilizzo di dati e algoritmi per imitare il modo in cui gli esseri umani apprendono, migliorando in modo graduale la sua accuratezza.
+                        Il machine learning è una componente importante del crescente campo della data science. Mediante l'uso di metodi statistici, gli algoritmi vengono addestrati per effettuare classifiche o previsioni, scoprendo degli insight chiave all'interno dei progetti di data mining.
+                    </p>
+                </div>
+            </article>
+            <article id="art3">
+                <h1>Interpretazione artificiale</h1>
+                <hr>
+                <div class="text">
+                    <img src="img/nlp.jpg" alt="">
+                    <p>
+                        Definizione alla mano, l’Artificial Intelligence è il ramo della computer science che studia lo sviluppo di sistemi Hardware e 
+                        Software dotati di specifiche capacità tipiche dell’essere umano (interazione con l’ambiente, apprendimento e adattamento, ragionamento e pianificazione), capaci di perseguire autonomamente una finalità definita,
+                        prendendo decisioni che fino a quel momento erano solitamente affidate alle persone.
+                        In altri termini, l’Intelligenza Artificiale è un campo di ricerca che studia la programmazione e progettazione di sistemi mirati a dotare le macchine di una o più caratteristiche considerate tipicamente umane.
+                        Proprietà, che variano dall'apprendimento alla percezione visiva o spazio-temporale.
+                    </p>
+                </div>
+            </article>
+            <article id="art4">
+                <h1>Etica dell'AI</h1>
+                <hr>
+                <div class="text">
+                    <p>
+                        L’IA sa scegliere tra bene o male?<br>
+                        Già nel 1942, quando l’intelligenza artificiale era solamente un’idea molto
+                        astratta, uno scrittore, Isaac Asimov, formulò le tre leggi della robotica, per
+                        disciplinare il comportamento di un robot autonomo in un ipotetico futuro.
+                    </p>
+                    <ol>
+                        <li>
+                            Un robot non può recare danno a un essere umano
+                        </li>
+                        <li>
+                            Un robot deve obbedire agli ordini impartiti dagli esseri umani,
+                            purché non siano in contrasto con la prima legge
+                        </li>
+                        <li>
+                            Un robot deve proteggere la propria esistenza, purché questo non
+                            contrasti con la prima o con la seconda legge
+                        </li>
+                    </ol>
+                    <img src="img/etica-intelligenza-artificiale-nuove-riflessioni.jpg">
+                    <p>
+                        Queste leggi sono un primo tentativo di basare l’agire dei robot intelligenti su
+                        un vero e proprio senso civico. <br>
+                        Ma come facciamo ad essere sicuri che questi algoritmi seguiranno questa
+                        strada? Cosa accadrà se una macchina prenderà decisioni sbagliate?
+                        L’obiettivo è quello di costruirle come aiutanti dell’essere umano, per
+                        permetterci di crescere e sviluppare nuove conoscenze.
+                        È quindi necessaria un’etica che governi l’intelligenza artificiale in tutti gli
+                        ambiti. <br>
+                        Ai livelli attuali dell’intelligenza artificiale quest’etica può facilmente essere
+                        controllata dai programmatori, nella fase di machine learning del sistema, ma
+                        in un futuro non molto lontano, quando l’AI sarà completamente autonoma
+                        come faremo ad imporgli le nostre regole e a farla agire secondo criteri
+                        razionali ed etici? Queste domande sono la principale causa che sta rallentando
+                        lo sviluppo di questa nuova tecnologia.
+                    </p>
+                </div>
+            </article>
         </section>
     </main>
-
     <script>
-        function slide(pag){
-            switch(pag){
-                case 0:
-                    src = 
-                    break;
-                case 1:
-                    break;
-                case 2:
-                    break;
-            }
-        }
+       
     </script>
 
 </body>

@@ -1,3 +1,8 @@
+@font-face {
+    font-family: typewriter;
+    src: url(../ELEGANT\ TYPEWRITER\ Regular.ttf);
+}
+
 body{
     margin: 0px;
     display: flex;
@@ -60,11 +65,57 @@ main{
 
 aside{
     height: 100%;
-    width: 7%;
-    background-color: #042940;
+    width: 27%;
     transition: 1.5s;
-    box-shadow: 0 0 0px 10px 10px 0px black;
+    /*border-right: 3px solid #042940;*/
+    display: flex;
+    align-items: center;
 }
+
+.lista{
+    height: 90%;
+    width: 90%;
+    position: relative;
+    margin-left: -50%;
+    border-radius: 0% 50% 50% 0%;
+    border: 2px solid #005C53;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.articolo{
+    position: absolute;
+    background-color: #0a4264;
+    color: white;
+    font-size: larger;
+    border: none;
+    box-shadow: 0 0 10px rgb(53, 53, 53);
+    width: 50%;
+    border-radius: 10px;
+}
+
+.articolo:first-child{
+    left: 65%;
+    top: 10%;
+}
+
+.articolo:nth-child(2){
+    left: 75%;
+    top: 35%;
+}
+
+.articolo:nth-child(3){
+    left: 75%;
+    top: 60%;
+}
+
+.articolo:last-child{
+    left: 65%;
+    top: 85%;
+}
+
+
 
 section{
     height: 140%;
@@ -77,17 +128,54 @@ section{
     box-shadow: 0 0 10px rgb(53, 53, 53);
     border-radius: 50px 50px 0px 0px;
     animation: section 1.5s normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding-bottom: 69px;
+}
+
+article{
+    height: 90%;
+    width: 90%;
+}
+
+article > h1{
+    font-size: 25px;
+    font-family: typewriter;
+}
+
+#art2, #art3, #art4{
+    display: none;
+}
+
+.text{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    visibility: visible;
+    animation: text 1.5s linear;
+    align-items: center;
+    font-family: typewriter;
+}
+
+.text > img{
+    width: 75%;
+    height: auto;
+    box-shadow: 0 0 5px rgb(53, 53, 53);
+    border-radius:10px;
+}
+
+.text > *{
+    margin-bottom: 20px;
+    font-family: typewriter;
 }
 
 section > iframe{
     height: 95%;
     width: 100%;
-}
-
-aside:hover{
-    width: 20%;
-    transition: 1s;
-    background-color: #005C53;
 }
 /*
 aside:hover + main > header{
@@ -102,6 +190,16 @@ aside:hover + main > header{
     
     100%{
         height: 140%;
+    }
+}
+
+@keyframes text{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
     }
 }
 
