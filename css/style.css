@@ -168,20 +168,11 @@ article > h1{
     border-radius:10px;
 }
 
-.text > *{
+.text > *, .text li{
     margin-bottom: 20px;
     font-family: typewriter;
 }
 
-section > iframe{
-    height: 95%;
-    width: 100%;
-}
-/*
-aside:hover + main > header{
-    border-bottom: 2px solid #005C53;
-}
-*/
 
 @keyframes section{
     0%{
